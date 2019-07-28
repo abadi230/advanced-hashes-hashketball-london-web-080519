@@ -266,12 +266,11 @@ def long_name_steals_a_ton?
     team_data[:players].each do |player_name, player_data|
       binding.pry
       if player_data[:steals] > steals 
-        steals = player_data[:steals]
-        
-       result = player_name
+       steals = player_data[:steals]
+       
       end
       if team_data[:players][longest_name]
-        team_data[:players][longest_name][:steals] > player_data[:steals]
+        team_data[:players][longest_name][:steals] > steals
         
       end
     end
