@@ -270,7 +270,7 @@ def long_name_steals_a_ton?
        
       end
       if team_data[:players][longest_name]
-        team_data[:players][longest_name][:steals] > steals
+        team_data[:players][longest_name][:steals] > steals ? true : false 
         
       end
     end
