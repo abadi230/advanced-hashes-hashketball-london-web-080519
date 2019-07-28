@@ -264,7 +264,15 @@ def long_name_steals_a_ton?
   game_hash.each do | h, team_data |
     team_data[:players].each do |player_name, player_data|
       binding.pry
-      team_data[:players][longest_name][:steals] > player_data[:steals]
+      if player_data > lenght_name 
+        lenght_name = player_name.length
+        
+       result = player_name
+      end
+      if team_data[:players][longest_name]
+        team_data[:players][longest_name][:steals] > player_data[:steals]
+        
+      end
     end
   end 
 end 
